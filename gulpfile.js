@@ -4,7 +4,7 @@ var gulp = require('gulp');
 nbld(gulp, {
     src: './src',
     dest: './build',
-    metrika: 32909025
+    metrika: 28698696
 });
 
 gulp.task('img', function () {
