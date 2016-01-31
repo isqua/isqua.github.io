@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+    head
+        title isqua projects
+        meta(charset="utf-8")
+        meta(name="description", content="My opensource projects")
+        meta(name="keywords", content="javascript, html, css, bash, web, front-end")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="stylesheet", type="text/css", href="//fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic|PT+Sans:700,400")
+        link(rel="stylesheet", href="/style.css")
+
+        each size in ['16x16', '32x32', '64x64']
+            link(rel="icon", type="image/png", href="/favicon-" + size + ".png", sizes=size)
+
+    body
+        header
+            h1 My opensource projects
+
+        main.projects
+
+            article.project
+                a(href="https://github.com/isqua/bureau")
+                    img.project-pic(src="../img/bureau.png", alt="bureau")
+                    h2.project-name Bureau
+                div.project-desc
+                    p Fast and informative ZSH prompt. Show username, hostname, path, git branch and status.
+            |  
+
+            article.project
+                a(href="https://isqua.github.io/bookmarklets/")
+                    img.project-pic(src="/img/bookmarklets.png", alt="bookmarklets")
+                    h2.project-name Bookmarklets
+                div.project-desc
+                    p My tiny bookmarklets for automate actions at Github, VK, VSCO, etc.
+            |  
+
+            article.project
+                a(href="https://github.com/isqua/exerceyes")
+                    img.project-pic(src="/img/exerceyes.png", alt="exerceyes")
+                    h2.project-name Exerceyes
+                div.project-desc
+                    p Exercise for relaxing eyes. I use it a few times a day.
+            |  
+
+            article.project
+                a(href="https://github.com/isqua/docker-koken")
+                    img.project-pic(src="/img/docker-koken.png", alt="Docker Koken")
+                    h2.project-name Koken in Docker container
+                div.project-desc
+                    p The difference of docker-koken-lemp is that nginx is not included to container.
+            |  
+
+            article.project
+                a(href="https://github.com/isqua/generator-shields")
+                    img.project-pic(src="/img/generator-shields.png", alt="Shields Generator")
+                    h2.project-name Shields Generator
+                div.project-desc
+                    p Easily add shields to your Readme. Dependencies, Travis-CI, Coverall, Code Climate.
+            |  
+
+            article.project
+                a(href="https://github.com/isqua/bulls-and-cows")
+                    img.project-pic(src="/img/bulls-and-cows.png", alt="Bulls & Cows")
+                    h2.project-name Bulls & Cows
+                div.project-desc
+                    p Numeric game. Computer picks a number and your mission is to guess it.
+            |  
+
+            a.other(href="https://github.com/isqua?tab=repositories")
+                | See others on Github
+
+
+        footer.footer
+            p.copyright
+                span ©
+                |  isqua
+            p
+                a(href="mailto:isqua@isqua.ru") isqua@isqua.ru

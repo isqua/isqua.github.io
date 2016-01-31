@@ -1,0 +1,23 @@
+{
+  "name": "isqua.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulp.js",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isqua/isqua.github.io.git"
+  },
+  "author": "isqua <isqua@isqua.ru>",
+  "bugs": {
+    "url": "https://github.com/isqua/isqua.github.io/issues"
+  },
+  "homepage": "https://isqua.github.io/",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "nbld": "^0.1.2"
+  }
+}
