@@ -47,6 +47,12 @@ h1 {
     transition: color .15s ease;
 }
 
+iframe {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
 .project a:hover .project-name {
     color: #d04000;
 }
