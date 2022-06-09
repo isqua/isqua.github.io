@@ -114,13 +114,16 @@ h1 {
     }
 
     .projects {
-        word-spacing: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
     .project {
-        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
         vertical-align: top;
-        word-spacing: initial;
     }
 
     .project-pic {

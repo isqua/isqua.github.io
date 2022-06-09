@@ -11,7 +11,7 @@ html(lang="en")
         link(rel="stylesheet", href="/style.css")
 
         each size in ['16x16', '32x32', '64x64']
-            link(rel="icon", type="image/png", href="/favicon-" + size + ".png", sizes=size)
+            link(rel="icon", type="image/png", href="/img/favicon-" + size + ".png", sizes=size)
 
         meta(name="google-site-verification", content="hwsBBSD0fypRi_29zRJXZwRoblxc1V8l2WAnmbwREVM")
         meta(name="yandex-verification", content="9cdbe254263621f4")
@@ -70,9 +70,8 @@ html(lang="en")
                     p Numeric game. Computer picks a number and your mission is to guess it.
             |  
 
-            a.other(href="https://github.com/isqua?tab=repositories")
+        a.other(href="https://github.com/isqua?tab=repositories&sort=stargazers")
                 | See others on Github
-
 
         footer.footer
             p.copyright
