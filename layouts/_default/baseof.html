@@ -13,104 +13,12 @@
         <header>
             <h1>{{ .Title }}</h1>
         </header>
-        <main class="projects">
-            <article class="project">
-                <a href="https://isqua.github.io/hugo-shortcodes/">
-                    <img src="/img/hugo-shortcodes.png" alt="Hugo Shortcodes" class="project-pic" />
-                    <h2 class="project-name">
-                        Hugo Shortcodes
-                        <iframe
-                            src="https://ghbtns.com/github-btn.html?user=isqua&amp;repo=hugo-shortcodes&amp;type=star&amp;count=true"
-                            frameborder="0"
-                            scrolling="0"
-                            width="90"
-                            height="20"
-                            title="GitHub"
-                        ></iframe>
-                    </h2>
-                </a>
-                <div class="project-desc">
-                    <p>Easy-to-use set of snippets for Hugo websites. From Gumroad button to Codepen iframe.</p>
-                </div>
-            </article>
-            <article class="project">
-                <a href="https://github.com/isqua/bureau">
-                    <img src="/img/bureau.png" alt="bureau" class="project-pic" />
-                    <h2 class="project-name">
-                        Bureau
-                        <iframe
-                            src="https://ghbtns.com/github-btn.html?user=isqua&amp;repo=bureau&amp;type=star&amp;count=true"
-                            frameborder="0"
-                            scrolling="0"
-                            width="90"
-                            height="20"
-                            title="GitHub"
-                        ></iframe>
-                    </h2>
-                </a>
-                <div class="project-desc">
-                    <p>Fast and informative ZSH prompt. Show username, hostname, path, git branch and status.</p>
-                </div>
-            </article>
-            <article class="project">
-                <a href="https://isqua.github.io/bookmarklets/">
-                    <img src="/img/bookmarklets.png" alt="bookmarklets" class="project-pic" />
-                    <h2 class="project-name">
-                        Bookmarklets
-                        <iframe
-                            src="https://ghbtns.com/github-btn.html?user=isqua&amp;repo=bookmarklets&amp;type=star&amp;count=true"
-                            frameborder="0"
-                            scrolling="0"
-                            width="90"
-                            height="20"
-                            title="GitHub"
-                        ></iframe>
-                    </h2>
-                </a>
-                <div class="project-desc">
-                    <p>My tiny bookmarklets for automate actions at Github, VK, VSCO, etc.</p>
-                </div>
-            </article>
-            <article class="project">
-                <a href="https://github.com/isqua/exerceyes">
-                    <img src="/img/exerceyes.png" alt="exerceyes" class="project-pic" />
-                    <h2 class="project-name">Exerceyes</h2>
-                </a>
-                <div class="project-desc">
-                    <p>Exercise for relaxing eyes. I use it a few times a day.</p>
-                </div>
-            </article>
-            <article class="project">
-                <a href="https://github.com/isqua/docker-koken">
-                    <img src="/img/docker-koken.png" alt="Docker Koken" class="project-pic" />
-                    <h2 class="project-name">Koken in Docker container</h2>
-                </a>
-                <div class="project-desc">
-                    <p>The difference of docker-koken-lemp is that nginx is not included to container.</p>
-                </div>
-            </article>
-            <article class="project">
-                <a href="https://github.com/isqua/generator-shields">
-                    <img src="/img/generator-shields.png" alt="Shields Generator" class="project-pic" />
-                    <h2 class="project-name">Shields Generator</h2>
-                </a>
-                <div class="project-desc">
-                    <p>Easily add shields to your Readme. Dependencies, Travis-CI, Coverall, Code Climate.</p>
-                </div>
-            </article>
-            <article class="project">
-                <a href="https://github.com/isqua/bulls-and-cows">
-                    <img src="/img/bulls-and-cows.png" alt="Bulls &amp; Cows" class="project-pic" />
-                    <h2 class="project-name">Bulls &amp; Cows</h2>
-                </a>
-                <div class="project-desc">
-                    <p>Numeric game. Computer picks a number and your mission is to guess it.</p>
-                </div>
-            </article>
+        <main>
+            {{- block "main" . }}{{- end }}
+            <a href="https://github.com/isqua?tab=repositories&amp;sort=stargazers" class="other">
+                See others on Github
+            </a>
         </main>
-        <a href="https://github.com/isqua?tab=repositories&amp;sort=stargazers" class="other">
-            See others on Github
-        </a>
         <footer class="footer">
             <p class="copyright"><span>©</span> isqua</p>
             <p><a href="mailto:isqua@isqua.ru">isqua@isqua.ru</a></p>
