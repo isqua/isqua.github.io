@@ -2,3 +2,7 @@ baseURL = 'https://isqua.github.io/'
 languageCode = 'en-us'
 title = 'isqua’s projects'
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[params.Verification]
+    Yandex = '9cdbe254263621f4'
+    Google = 'hwsBBSD0fypRi_29zRJXZwRoblxc1V8l2WAnmbwREVM'

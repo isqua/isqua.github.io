@@ -1,6 +1,6 @@
-<html lang="en">
+<html lang="{{ .Site.LanguageCode }}">
     <head>
-        <title>isqua projects</title>
+        <title>{{ .Site.Title }}</title>
         <meta charset="utf-8" />
         <meta name="description" content="My opensource projects" />
         <meta name="keywords" content="javascript, html, css, bash, web, front-end" />
@@ -14,8 +14,8 @@
         <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/img/favicon-64x64.png" sizes="64x64" />
 
-        <meta name="google-site-verification" content="hwsBBSD0fypRi_29zRJXZwRoblxc1V8l2WAnmbwREVM" />
-        <meta name="yandex-verification" content="9cdbe254263621f4" />
+        <meta name="google-site-verification" content="{{ .Site.Params.Verification.Google }}" />
+        <meta name="yandex-verification" content="{{ .Site.Params.Verification.Yandex }}" />
     </head>
     <body>
         <header>
