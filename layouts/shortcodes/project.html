@@ -2,18 +2,19 @@
 {{- $cover := .Get "cover" -}}
 {{- $url := .Get "url" -}}
 
-<article class="project">
-    <a href="{{ $url }}">
-        <img src="{{ $cover }}" alt="{{ $title }}" class="project-pic" />
-        <h2 class="project-name">
-            {{ $title }}
-            {{- if .Get "stars" -}}
-                {{- $url := printf "https://ghbtns.com/github-btn.html?%s&type=star&count=true" (.Get "stars") -}}
-                <iframe src="{{ $url }}" frameborder="0" scrolling="0" width="90" height="20" title="GitHub"></iframe>
-            {{- end -}}
-        </h2>
+<article class="project border rounded color-shadow-small color-bg-subtle">
+    <a href="{{ $url }}" tabindex="-1">
+        <img src="{{ $cover }}" alt="{{ $title }}" class="project-pic rounded-top-2" />
     </a>
-    <div class="project-desc">
-        {{ .Inner }}
+    <div class="d-flex flex-justify-between flex-items-start flex-wrap gap-2 px-3 pt-3 pb-2">
+        <h3 class="project-name lh-condensed m-0">
+            <a href="{{ $url }}">
+                {{ $title }}
+            </a>
+        </h3>
+    </div>
+    </a>
+    <div class="project-desc px-3 pb-3">
+        {{ .Inner | markdownify }}
     </div>
 </article>

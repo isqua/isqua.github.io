@@ -1,0 +1,45 @@
+.isqua-logo {
+    border-radius: 50%;
+
+    @media (prefers-color-scheme: dark) {
+        color: #0ab40a;
+
+        .isqua-bg {
+            fill: transparent;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        .isqua-bg {
+            fill: #0ab40a;
+        }
+    }
+}
+
+.projects {
+    gap: $spacer-4;
+}
+
+.project {
+    width: 300px;
+}
+
+.project-pic {
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+
+.footer {
+    gap: $spacer-2;
+}
+
+.copyright span {
+    display: inline-block;
+    transition: transform .2s ease;
+}
+
+.copyright:hover span {
+    transform: scaleX(-1);
+    color: #d04000;
+}

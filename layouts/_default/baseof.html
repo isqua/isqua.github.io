@@ -1,4 +1,4 @@
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.LanguageCode }}" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark" class="color-bg-subtle">
     <head>
         <title>{{ .Site.Title }}</title>
         <meta charset="utf-8" />
@@ -9,20 +9,32 @@
         {{- partial "head/favicons.html" . -}}
         {{- partial "head/verification.html" . -}}
     </head>
-    <body>
-        <header>
-            <h1>{{ .Title }}</h1>
+    <body class="color-bg-default">
+        <header class="Subhead px-4 py-3 color-bg-subtle">
+            <div class="Header-item">
+                <svg class="octicon isqua-logo" width="32" height="32">
+                    <circle class="isqua-bg" cx="16" cy="17" r="15"></circle>
+                    <use xlink:href="#github"></use>
+                </svg>
+            </div>
+            <h1 class="Subhead-heading">
+                {{ .Title }}
+            </h1>
         </header>
-        <main>
+        <main class="markdown-body px-4">
             {{- block "main" . }}{{- end }}
-            <a href="https://github.com/isqua?tab=repositories&amp;sort=stargazers" class="other">
-                See others on Github
+            <a href="https://github.com/isqua?tab=repositories&q=&type=source" class="btn mt-6">
+                <svg class="octicon" width="16" height="16">
+                    <use xlink:href="#github"></use>
+                </svg>
+                <span>See others on GitHub</span>
             </a>
         </main>
-        <footer class="footer">
+        <footer class="color-bg-default footer d-flex border-top border-gray-light mt-5 py-3 px-4 text-gray">
             <p class="copyright"><span>©</span> isqua</p>
             <p><a href="mailto:isqua@isqua.ru">isqua@isqua.ru</a></p>
         </footer>
+        {{- partial "icons/sprite.html" . -}}
         {{- partial "telemetry/yandex.html" . -}}
     </body>
 </html>
