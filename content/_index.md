@@ -1,3 +1,3 @@
 +++
-title = 'My opensource projects'
+title = 'isqua’s projects'
 +++
