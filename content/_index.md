@@ -6,7 +6,7 @@ keywords: ['javascript', 'html', 'css', 'bash', 'web', 'front-end']
 
 {{< project
     title="Hugo Shortcodes"
-    cover="/img/hugo-shortcodes.png"
+    cover="./img/hugo-shortcodes.png"
     url="https://isqua.github.io/hugo-shortcodes/"
     stars="user=isqua&repo=hugo-shortcodes"
 >}}
@@ -15,7 +15,7 @@ Easy-to-use set of snippets for Hugo websites. From Gumroad button to Codepen if
 
 {{< project
     title="Bureau"
-    cover="/img/bureau.png"
+    cover="./img/bureau.png"
     url="https://github.com/isqua/bureau"
     stars="user=isqua&repo=bureau"
 >}}
@@ -24,7 +24,7 @@ Fast and informative ZSH prompt. Show username, hostname, path, git branch and s
 
 {{< project
     title="Bookmarklets"
-    cover="/img/bookmarklets.png"
+    cover="./img/bookmarklets.png"
     url="https://isqua.github.io/bookmarklets/"
     stars="user=isqua&repo=bookmarklets"
 >}}
@@ -33,7 +33,7 @@ My tiny bookmarklets for automate actions at Github, VK, VSCO, etc.
 
 {{< project
     title="Exerceyes"
-    cover="/img/exerceyes.png"
+    cover="./img/exerceyes.png"
     url="https://github.com/isqua/exerceyes"
 >}}
 Exercise for relaxing eyes. I use it a few times a day.
@@ -41,7 +41,7 @@ Exercise for relaxing eyes. I use it a few times a day.
 
 {{< project
     title="Koken in Docker container"
-    cover="/img/docker-koken.png"
+    cover="./img/docker-koken.png"
     url="https://github.com/isqua/docker-koken"
 >}}
 The difference of docker-koken-lemp is that nginx is not included to container.
@@ -49,7 +49,7 @@ The difference of docker-koken-lemp is that nginx is not included to container.
 
 {{< project
     title="Shields Generator"
-    cover="/img/generator-shields.png"
+    cover="./img/generator-shields.png"
     url="https://github.com/isqua/generator-shields"
 >}}
 Easily add shields to your Readme. Dependencies, Travis-CI, Coverall, Code Climate.
@@ -57,7 +57,7 @@ Easily add shields to your Readme. Dependencies, Travis-CI, Coverall, Code Clima
 
 {{< project
     title="Bulls & Cows"
-    cover="/img/bulls-and-cows.png"
+    cover="./img/bulls-and-cows.png"
     url="https://github.com/isqua/bulls-and-cows"
 >}}
 Numeric game. Computer picks a number and your mission is to guess it.
