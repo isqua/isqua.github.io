@@ -1,0 +1,4 @@
+baseURL = 'https://isqua.github.io/'
+languageCode = 'en-us'
+title = 'isqua’s projects'
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
