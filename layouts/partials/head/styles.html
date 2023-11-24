@@ -1,4 +1,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic|PT+Sans:700,400" />
-{{- $styles := resources.Get "styles/main.scss" | toCSS | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+{{ $opts := dict
+    "transpiler" "dartsass"
+    "targetPath" "styles/main.css"
+    "enableSourceMap" (not hugo.IsProduction)
+    "includePaths" (slice "node_modules")
+}}
+{{ with resources.Get "styles/main.scss" | toCSS $opts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
