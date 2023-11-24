@@ -9,6 +9,9 @@
   },
   "author": "isqua <isqua@isqua.ru>",
   "homepage": "https://isqua.github.io/",
+  "dependencies": {
+    "@primer/css": "21.0.10"
+  },
   "devDependencies": {
   }
 }
