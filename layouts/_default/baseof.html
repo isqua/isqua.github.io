@@ -2,8 +2,8 @@
     <head>
         <title>{{ .Site.Title }}</title>
         <meta charset="utf-8" />
-        <meta name="description" content="My opensource projects" />
-        <meta name="keywords" content="javascript, html, css, bash, web, front-end" />
+        <meta name="description" content='{{ .Description }}' />
+        <meta name="keywords" content='{{ delimit .Keywords ", "}}' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic|PT+Sans:700,400" />
