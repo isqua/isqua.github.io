@@ -1,0 +1,3 @@
+{{ range resources.Match "images/favicon*" }}
+    <link rel="icon" type="{{ .MediaType }}" href="{{ .RelPermalink }}" sizes="{{ .Width }}x{{ .Height }}" />
+{{ end }}
