@@ -7,6 +7,7 @@
     "enableSourceMap" (not hugo.IsProduction)
     "includePaths" (slice "node_modules")
 }}
-{{ with resources.Get "styles/main.scss" | toCSS $opts | minify | fingerprint }}
+
+{{ with resources.Get "styles/main.scss" | toCSS $opts | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
