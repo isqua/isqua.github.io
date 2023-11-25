@@ -4,6 +4,61 @@ description: 'My opensource projects'
 keywords: ['javascript', 'html', 'css', 'bash', 'web', 'front-end']
 ---
 
+{{<md>}}
+
+# Hi! I’m Alex
+
+Frontend developer with backend (nest.js) and a bunch of DevOps skills. Have leading and mentoring experience. I like to improve the time to market metrics. My current stack includes React, Redux, Nest.js, PostgreSQL, TypeScript.
+
+{{</md>}}
+
+{{<md>}}
+
+## Demo Projects
+
+I created these projects to demonstrate my skills or to practice some ideas. Exploring these examples, you can see what kinds of tasks I’ve faced and how I write production code.
+
+{{</md>}}
+
+{{<projects>}}
+
+{{< project
+    title="Query Language Input"
+    cover="./img/ql.png"
+    cover-dark="./img/ql-dark.png"
+    url="https://github.com/isqua/syntax-sandbox#readme"
+>}}
+A parser of a custom query language with dynamically defined properties.
+{{</project>}}
+
+{{< project
+    title="Table of Content"
+    cover="./img/toc.png"
+    cover-dark="./img/toc-dark.png"
+    url="https://github.com/isqua/table-of-content#readme"
+>}}
+Building a large menu tree from a flat API response, react transitions and a fuzzy search.
+{{</project>}}
+
+{{< project
+    title="Form Generator"
+    cover="./img/form-generator.png"
+    cover-dark="./img/form-generator-dark.png"
+    url="https://github.com/isqua/form-generator#readme"
+>}}
+Data-driven interface, where the form is generated from JSON declaration.
+{{</project>}}
+
+{{</projects>}}
+
+{{<md>}}
+
+## Functional Projects
+
+My tools that I use myself, and you can use them.
+
+{{</md>}}
+
 {{<projects>}}
 
 {{< project
@@ -36,30 +91,6 @@ My tiny bookmarklets for automate actions at Github, VK, VSCO, etc.
     url="https://github.com/isqua/exerceyes"
 >}}
 Exercise for relaxing eyes. I use it a few times a day.
-{{</project>}}
-
-{{< project
-    title="Koken in Docker container"
-    cover="./img/docker-koken.png"
-    url="https://github.com/isqua/docker-koken"
->}}
-The difference of docker-koken-lemp is that nginx is not included to container.
-{{</project>}}
-
-{{< project
-    title="Shields Generator"
-    cover="./img/generator-shields.png"
-    url="https://github.com/isqua/generator-shields"
->}}
-Easily add shields to your Readme. Dependencies, Travis-CI, Coverall, Code Climate.
-{{</project>}}
-
-{{< project
-    title="Bulls & Cows"
-    cover="./img/bulls-and-cows.png"
-    url="https://github.com/isqua/bulls-and-cows"
->}}
-Numeric game. Computer picks a number and your mission is to guess it.
 {{</project>}}
 
 {{</projects>}}

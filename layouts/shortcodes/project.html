@@ -1,14 +1,20 @@
 {{- $title := .Get "title" -}}
 {{- $cover := .Get "cover" -}}
+{{- $cover_dark := .Get "cover-dark" -}}
 {{- $url := .Get "url" -}}
 
 <article class="project border rounded color-shadow-small color-bg-subtle">
-    <a href="{{ $url }}" tabindex="-1">
-        <img src="{{ $cover }}" alt="{{ $title }}" class="project-pic rounded-top-2" />
+    <a href="{{ $url }}" target="_blank" tabindex="-1" class="color-shadow-small">
+        <picture>
+            {{- with $cover_dark -}}
+                <source srcset="{{ . }}" media="(prefers-color-scheme: dark)">
+            {{- end -}}
+            <img src="{{ $cover }}" alt="{{ $title }}" class="project-pic rounded-top-2" />
+        </picture>
     </a>
-    <div class="d-flex flex-justify-between flex-items-start flex-wrap gap-2 px-3 pt-3 pb-2">
+    <div class="d-flex flex-justify-between flex-items-start flex-wrap gap-2 px-3 pt-3 pb-2 border-top border-gray-light">
         <h3 class="project-name lh-condensed m-0">
-            <a href="{{ $url }}">
+            <a href="{{ $url }}" target="_blank">
                 {{ $title }}
             </a>
         </h3>
