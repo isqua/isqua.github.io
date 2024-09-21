@@ -52,6 +52,15 @@ Building a large menu tree from a flat API response, react transitions and a 
 Data-driven interface, where the form is generated from JSON declaration.
 {{</project>}}
 
+{{< project
+    title="Swap Game"
+    cover="./img/swap-game.png"
+    url="https://github.com/isqua/swap-game#readme"
+    labels="svelte"
+>}}
+A tiny game about balls built with svelte and smooth transitions.
+{{</project>}}
+
 {{</projects>}}
 
 {{<md>}}
